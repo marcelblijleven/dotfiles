@@ -1,0 +1,8 @@
+{
+    // General
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python"
+    ],
+    // Python related
+    "python.venvPath": "${env:HOME}/.virtualenvs"
+}
