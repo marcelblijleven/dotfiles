@@ -21,10 +21,15 @@ alias ge='git-edit-new'
 alias gsupdate='git submodule foreach git pull origin master'
 
 # Worktrees (this is the good stuff)
-gwa() {
-    git worktree add "$1"
-    cd $1
+alias gwa='git worktree add '
+
+gwa-help() {
+    echo "For new branches:"
+    echo "  git worktree add -b <branch-name> <path>"
+    echo "For existing branches:"
+    echo "  git worktree add <path> <branch-name>"
 }
+
 alias gwl='git worktree list'
 alias gwr='git worktree remove '
 alias gwp='git worktree prune'
