@@ -18,7 +18,7 @@ alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
 
 # Submodules
-alias gsupdate='git submodule update --remote'
+alias gsupdate='git submodule foreach git pull origin master'
 
 # Worktrees (this is the good stuff)
 gwa() {
