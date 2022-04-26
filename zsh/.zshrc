@@ -1,13 +1,14 @@
 export DOTFILES_HOME="$HOME/.dotfiles"
+export ZSH="$DOTFILES_HOME/oh-my-zsh"
+
 
 # Oh My ZSH
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH_HOME="$HOME/.oh-my-zsh"
 
 ZSH_THEME="theunraveler"
 plugins=(git)
 
-source $ZSH_HOME/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # Project folder
 export PROJECTS=~/code
@@ -19,11 +20,18 @@ then
     source ~/.localrc
 fi
 
-# Source all sh files in ~/.dotfiles and sub directories
-typeset -U config_files
-config_files=($DOTFILES_HOME/**/*.sh)
+# Source path files
+find $DOTFILES_HOME -name path.sh|while read fname; do
+	source $fname
+done
 
-unset config_files
+# Source aliases files
+find $DOTFILES_HOME -name aliases.sh|while read fname; do
+	source $fname
+done
+
+# Set up Python virtualenv
+source $DOTFILES_HOME/python/virtualenv.sh
 
 # Better history search
 # (https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys)
