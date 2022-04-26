@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-if test ! $(which brew)
+if [ "$(uname -s)" == "Darwin" ]
 then
-    echo "Installing homebrew"
-
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    if test ! $(which brew)
+    then
+        echo "Installing homebrew"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    fi
 fi
 
 exit 0

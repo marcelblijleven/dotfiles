@@ -21,12 +21,13 @@ fail () {
 printf "\033[00;34mInitializing dotfiles\033[0m\n"
 echo ""
 
-# Install and set up homebrew and macOS defaults
+# Set up macOS defaults
 if [ "$(uname -s)" == "Darwin" ]
 then
-    info "Installing homebrew"
-    $DOTFILES_HOME/homebrew/install.sh 2>&1
     info "Setting up macOS defaults"
     $DOTFILES_HOME/macos/defaults.sh
 fi
+
+info "Running install.sh scripts"
+$DOTFILES_HOME/scripts/install.sh
 
