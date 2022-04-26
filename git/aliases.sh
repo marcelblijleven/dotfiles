@@ -16,3 +16,15 @@ alias gb='git branch'
 alias gs='git status -sb'
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
+
+# Submodules
+alias gsupdate='git submodule update --remote'
+
+# Worktrees (this is the good stuff)
+gwa() {
+    git worktree add "$1"
+    cd $1
+}
+alias gwl='git worktree list'
+alias gwr='git worktree remove '
+
