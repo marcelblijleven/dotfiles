@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function time_24() {
-    printf "%s " "$(strftime %F)"
+    printf "%s " "$(date +'%H:%M')"
 }
 
 function status_bar() {
