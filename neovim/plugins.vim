@@ -5,9 +5,12 @@ call plug#begin()
 
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-    "Folder structure / tree
+    
+    " Folder structure / tree
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+    " Commenting
+    Plug 'preservim/nerdcommenter' 
 
     " Git integration
     Plug 'tpope/vim-fugitive'
