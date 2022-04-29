@@ -1,5 +1,5 @@
 note () {
-	local notes_dir="~/notes/docs/"
+    local notes_dir="~/notes/docs/"
     mkdir -p ${notes_dir}
 	local filename="$1"
 	local existing_filename=$(cd $notes_dir && fzf -q $filename -1 -0)
