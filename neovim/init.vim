@@ -4,4 +4,5 @@ source ~/.dotfiles/neovim/plugins.vim
 source ~/.dotfiles/neovim/highlighting.vim
 source ~/.dotfiles/neovim/remaps.vim
 source ~/.dotfiles/neovim/theme.vim
+source ~/.dotfiles/neovim/formatting.vim
 
