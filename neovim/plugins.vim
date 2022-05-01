@@ -33,5 +33,8 @@ call plug#begin()
     " Fuzzy finder
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
+    " Formatters
+    Plug 'sbdchd/neoformat'
+        
 call plug#end()
 
