@@ -5,7 +5,7 @@ set noswapfile
 
 syntax enable
 
-set colorcolumn=80
+set colorcolumn=88
 set signcolumn=yes
 
 set updatetime=50
