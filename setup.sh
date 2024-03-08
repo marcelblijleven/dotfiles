@@ -14,3 +14,17 @@ git clone https://github.com/alacritty/alacritty-theme "$XDG_CONFIG_HOME/alacrit
 
 # Run MacOS defaults
 ./macos/defaults.sh
+
+# Install homebrew and run brew bundle
+
+## Check for Homebrew
+if test ! $(which brew); then
+	echo "  Installing Homebrew"
+
+	bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+fi
+
+## Install from Brewfile
+brew bundle
+
+exit 0
