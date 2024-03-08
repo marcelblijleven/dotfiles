@@ -11,6 +11,10 @@ family = "UbuntuMono Nerd Font"
 [window]
 decorations = "buttonless"
 
+[window.dimensions]
+columns = 80
+lines = 100
+
 [window.padding]
 x = 10
 y = 20
