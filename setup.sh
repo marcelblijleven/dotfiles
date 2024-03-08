@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Running this script after cloning the repository makes sure
 # everything is set up correctly (and automatically).
@@ -11,3 +11,6 @@ ln -sf "$PWD/.config" "$XDG_CONFIG_HOME"
 
 # Clone alacritty themes into config dir
 git clone https://github.com/alacritty/alacritty-theme "$XDG_CONFIG_HOME/alacritty/themes"
+
+# Run MacOS defaults
+./macos/defaults.sh
