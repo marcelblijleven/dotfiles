@@ -8,22 +8,37 @@ defaults write com.apple.screencapture location ~/screenshots
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Don't write .DS_Store files
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.TimeMachine "DoNotOfferNewDisksForBackup" -bool "true"
 
 # Don't offer new disks for Time Machine backup
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-# Reset ui
-killall SystemUIServer
-
 # Safari Webdev
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
+defaults write com.apple.Safari.plist IncludeDevelopMenu -bool true
+defaults write com.apple.Safari.plist WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari.plist "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Show / hide dock faster
 defaults write com.apple.dock autohide-delay -int 0
 defaults write com.apple.dock autohide-time-modifier -float 0.4
+# Don't show recent apps
+defaults write com.apple.dock "show-recents" -bool "false"
+
 killall Dock
+
+# Open Finder in list view by default
+defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv"
+
+# Set default search scope for Finder to 'current directory'
+defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf"
+
+# Show the ~/Library/ directory
+chflags nohidden ~/Library
+
+# Make : in clock blink
+defaults write com.apple.menuextra.clock "FlashDateSeparators" -bool "true"
+
+# Reset ui
+killall SystemUIServer
