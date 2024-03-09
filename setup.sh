@@ -4,13 +4,12 @@
 # everything is set up correctly (and automatically).
 
 # Create directories
-export XDG_CONFIG_HOME="$HOME/.config"
-
+export CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 # Create symbolic link from the repository to the config dir
-ln -sf "$PWD/.config" "$XDG_CONFIG_HOME"
+ln -sf "$PWD/.config" "$CONFIG_HOME"
 
 # Clone alacritty themes into config dir
-git clone https://github.com/alacritty/alacritty-theme "$XDG_CONFIG_HOME/alacritty/themes"
+git clone https://github.com/alacritty/alacritty-theme "$CONFIG_HOME/alacritty/themes"
 
 # Run MacOS defaults
 ./macos/defaults.sh
@@ -26,5 +25,8 @@ fi
 
 ## Install from Brewfile
 brew bundle
+
+# Make sure pipx is installed correctly
+pipx ensurepath
 
 exit 0
