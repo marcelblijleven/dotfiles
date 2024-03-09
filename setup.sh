@@ -6,7 +6,7 @@
 # Create directories
 export CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 # Create symbolic link from the repository to the config dir
-ln -sf "$PWD/.config" "$CONFIG_HOME"
+ln -sf "$PWD/config" "$CONFIG_HOME"
 
 # Clone alacritty themes into config dir
 git clone https://github.com/alacritty/alacritty-theme "$CONFIG_HOME/alacritty/themes"
