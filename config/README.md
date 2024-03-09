@@ -1,4 +1,4 @@
-# .config
+# config
 
 Home of various configuration files
 
