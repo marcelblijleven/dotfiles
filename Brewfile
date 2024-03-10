@@ -7,5 +7,6 @@ brew 'ripgrep'
 brew 'fd'
 brew 'pyenv'
 brew 'xz'
+brew 'pipx'
 
 cask 'alacritty'
