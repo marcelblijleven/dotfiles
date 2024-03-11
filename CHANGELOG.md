@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/marcelblijleven/dotfiles/compare/v1.0.0...v1.1.0) (2024-03-11)
+
+
+### Features
+
+* add new nvim plugins ([f2f0dc0](https://github.com/marcelblijleven/dotfiles/commit/f2f0dc07bf2a9adeec24332fc50ba7a2e165e2bf))
+
 ## 1.0.0 (2024-03-11)
 
 
