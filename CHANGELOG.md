@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/marcelblijleven/dotfiles/compare/v1.2.0...v1.3.0) (2024-03-12)
+
+
+### Features
+
+* add git aliases ([8111118](https://github.com/marcelblijleven/dotfiles/commit/81111189cc55a7281d9de6c96695171c1997855d))
+
 ## [1.2.0](https://github.com/marcelblijleven/dotfiles/compare/v1.1.0...v1.2.0) (2024-03-11)
 
 
