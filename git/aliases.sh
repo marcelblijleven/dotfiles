@@ -3,6 +3,9 @@
 # This will set various git aliases in the global git config, that's why this file should not be
 # included in any source file like .zshrc
 
+# Shorter commit alias
+git config --global alias.c 'commit'
+
 # Commit with -m flag
 git config --global alias.cm 'commit -m'
 
@@ -25,3 +28,9 @@ git config --global alias.amend 'commit --amend'
 
 # Nicer git log
 git config --global alias.logg "log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+# List all branches, local and remote
+git config --global alias.branches 'branch -va'
+
+# Show short git status
+git config --global alias.s 'status -s'
