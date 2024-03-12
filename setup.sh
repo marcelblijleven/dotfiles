@@ -15,7 +15,7 @@ git clone https://github.com/alacritty/alacritty-theme "$CONFIG_HOME/alacritty/t
 ./macos/defaults.sh
 
 # Configure git aliases
-./git/aliases.sh
+./git/setup.sh
 
 # Install homebrew and run brew bundle
 
