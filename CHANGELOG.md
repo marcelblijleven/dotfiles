@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/marcelblijleven/dotfiles/compare/v1.3.0...v1.4.0) (2024-03-14)
+
+
+### Features
+
+* add git aliases ([b38d17a](https://github.com/marcelblijleven/dotfiles/commit/b38d17a3ce21fc73825b3fd733c2a72c467a0879))
+* add yabai ([6ee7228](https://github.com/marcelblijleven/dotfiles/commit/6ee722887d801e696e379271cd7e92ae9e96c4e1))
+
 ## [1.3.0](https://github.com/marcelblijleven/dotfiles/compare/v1.2.0...v1.3.0) (2024-03-12)
 
 
