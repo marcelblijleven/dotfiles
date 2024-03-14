@@ -34,3 +34,6 @@ git config --global alias.branches 'branch -va'
 
 # Show short git status
 git config --global alias.s 'status -s'
+
+# Open current git repo in Safari
+git config --global alias.open '!git-repo-browser'

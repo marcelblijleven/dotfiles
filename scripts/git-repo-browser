@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+REPO_URL=$(git remote get-url origin | sed 's/:/\//;s/git@/https:\/\//;s/.git$//')
+
+open -a "Safari" $REPO_URL

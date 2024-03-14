@@ -5,14 +5,20 @@
 
 # Create directories
 export CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
+
 # Create symbolic link from the repository to the config dir
 ln -sf "$PWD/config" "$CONFIG_HOME"
+
+# Create a symbolic link for .zshrc to the root dir
+ln -sf "$PWD/.zshrc" "$HOME"
 
 # Clone alacritty themes into config dir
 git clone https://github.com/alacritty/alacritty-theme "$CONFIG_HOME/alacritty/themes"
 
 # Run MacOS defaults
-./macos/defaults.sh
+if [ "$(uname -s)" == "Darwin" ]; then
+	./macos/defaults.sh
+fi
 
 # Configure git aliases
 ./git/setup.sh
