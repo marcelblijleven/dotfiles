@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/marcelblijleven/dotfiles/compare/v1.4.0...v1.5.0) (2024-03-15)
+
+
+### Features
+
+* add obsidian plugin ([e0b1ce2](https://github.com/marcelblijleven/dotfiles/commit/e0b1ce29aa6ed085e628c185f69d0f6d95c81c54))
+* add skhd ([87913b5](https://github.com/marcelblijleven/dotfiles/commit/87913b5bb263ae24ac89afd4d20937a0e25a9af1))
+
 ## [1.4.0](https://github.com/marcelblijleven/dotfiles/compare/v1.3.0...v1.4.0) (2024-03-14)
 
 
