@@ -40,7 +40,8 @@ export PATH="$DOTFILES_SCRIPTS:$PATH"
 alias vim="nvim"
 alias repos="cd $REPOS"
 alias myrepos="cd $MYREPOS"
-alias notes="cd '$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes'"
+# alias notes="cd '$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Notes'"
+alias notes="cd ~/vaults/personal"
 alias ll="ls -nal"
 
 # Created by `pipx` on 2024-03-09 12:41:37

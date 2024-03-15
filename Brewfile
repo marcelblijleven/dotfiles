@@ -9,6 +9,7 @@ brew 'pyenv'
 brew 'xz'
 brew 'pipx'
 brew 'koekeishiya/formulae/yabai'
+brew 'koekeishiya/formulae/skhd'
 brew 'jq'
 
 cask 'alacritty'
