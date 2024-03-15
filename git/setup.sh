@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# [[ Configuration ]]
+# Always display git branch in columns
+git config --global column.ui always
+
+# [[ Aliases ]]
 # This will set various git aliases in the global git config, that's why this file should not be
 # included in any source file like .zshrc
 
