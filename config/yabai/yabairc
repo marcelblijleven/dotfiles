@@ -23,7 +23,6 @@ yabai -m space 2 --label web
 yabai -m space 3 --label term
 yabai -m space 4 --label converse
 
-
 # Assign apps to specific spaces
 yabai -m rule --add app="^(Safari|Google Chrome)$" space=web
 yabai -m rule --add app="^Alacritty$" space=term
