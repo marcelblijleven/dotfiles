@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/marcelblijleven/dotfiles/compare/v1.5.0...v1.6.0) (2024-09-20)
+
+
+### Features
+
+* **dap:** add virtualtext settings for dap ([77de923](https://github.com/marcelblijleven/dotfiles/commit/77de923c1e136a7454113c6a1914e993ab7d4fc6))
+* **nvim-test:** add plenary nvim plugin ([0df333d](https://github.com/marcelblijleven/dotfiles/commit/0df333d0f7d0637a25b0a018c25dbf91d2d4aae6))
+
 ## [1.5.0](https://github.com/marcelblijleven/dotfiles/compare/v1.4.0...v1.5.0) (2024-03-15)
 
 
