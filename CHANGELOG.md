@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/marcelblijleven/dotfiles/compare/v1.6.0...v1.6.1) (2024-09-29)
+
+
+### Bug Fixes
+
+* python crashes after debugging ([a176ccc](https://github.com/marcelblijleven/dotfiles/commit/a176cccbd9bca0f623e0979df07bf030afde78a8))
+
 ## [1.6.0](https://github.com/marcelblijleven/dotfiles/compare/v1.5.0...v1.6.0) (2024-09-20)
 
 
