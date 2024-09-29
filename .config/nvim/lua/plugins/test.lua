@@ -13,7 +13,6 @@ return {
         require("neotest-python")({
           runner = "pytest",
           dap = { justMyCode = true },
-          python = ".venv/bin/python",
         })
       )
       table.insert(opts.adapters, require("neotest-golang"))
