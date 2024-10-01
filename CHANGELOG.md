@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.0](https://github.com/marcelblijleven/dotfiles/compare/v1.6.1...v1.7.0) (2024-10-01)
+
+
+### Features
+
+* **python:** add pyenv virtualenv creation for neovim ([e878b80](https://github.com/marcelblijleven/dotfiles/commit/e878b809a6d980b0ddc634eefee6c7ce4ba734bd))
+
+
+### Bug Fixes
+
+* **nvim:** add LspStart to vim schedule ([f50e902](https://github.com/marcelblijleven/dotfiles/commit/f50e902957646dfaeabac73f6034f4cb1953933e))
+
 ## [1.6.1](https://github.com/marcelblijleven/dotfiles/compare/v1.6.0...v1.6.1) (2024-09-29)
 
 
