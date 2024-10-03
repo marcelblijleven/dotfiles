@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/marcelblijleven/dotfiles/compare/v1.7.0...v1.8.0) (2024-10-03)
+
+
+### Features
+
+* add new dashboard header ([dfe56ae](https://github.com/marcelblijleven/dotfiles/commit/dfe56ae4c8472750c04c9ca846256e4ad32d9d7f))
+
 ## [1.7.0](https://github.com/marcelblijleven/dotfiles/compare/v1.6.1...v1.7.0) (2024-10-01)
 
 
