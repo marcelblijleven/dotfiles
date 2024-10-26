@@ -10,5 +10,6 @@ brew 'pyenv-virtualenv'
 brew 'xz'
 brew 'pipx'
 brew 'jq'
+brew 'tmux'
 
 cask 'kitty'
