@@ -22,7 +22,7 @@ git clone https://github.com/alacritty/alacritty-theme "$CONFIG_HOME/alacritty/t
 
 # Run MacOS defaults
 if [ "$(uname -s)" == "Darwin" ]; then
-	./macos/defaults.sh
+  ./macos/defaults.sh
 fi
 
 # Configure git aliases
@@ -32,9 +32,9 @@ fi
 
 ## Check for Homebrew
 if test ! $(which brew); then
-	echo "  Installing Homebrew"
+  echo "  Installing Homebrew"
 
-	bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+  bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 fi
 
 ## Install from Brewfile
@@ -42,5 +42,8 @@ brew bundle
 
 # Make sure pipx is installed correctly
 pipx ensurepath
+
+# Install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 exit 0
