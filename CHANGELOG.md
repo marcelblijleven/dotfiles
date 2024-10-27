@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.0 (2024-10-27)
+
+### Fix
+
+- use ssh key instead of token during checkout
+
 ## [1.8.0](https://github.com/marcelblijleven/dotfiles/compare/v1.7.0...v1.8.0) (2024-10-03)
 
 
