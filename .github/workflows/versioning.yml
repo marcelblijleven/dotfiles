@@ -16,10 +16,10 @@ jobs:
     name: "🚀 Bump version and create changelog with commitizen"
     steps:
       - name: 📥 Check out
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.DEPLOY_KEY }}
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
       - id: cz
         name: 📝 Create bump and changelog
         uses: commitizen-tools/commitizen-action@master
