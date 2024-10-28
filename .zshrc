@@ -27,13 +27,14 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 # Starship setup
-
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # Aliasses
 
 alias vim="nvim"
 alias ll="ls -nHal"
+alias secondbrain="cd '/Users/marcelblijleven/Library/Mobile Documents/iCloud~md~obsidian/Documents/SecondBrain'"
 
 # Faster keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
