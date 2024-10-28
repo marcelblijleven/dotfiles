@@ -22,12 +22,12 @@ for example the`.config` directory in this repository is symlinked to `~/.config
 
 <!--- end of static README.md --->
 
-## .config
+### .config
 
 This is where the majority of the configuration files life.
 This directory will be symlinked to `~/.config/`.
 
-### Set up Python
+#### Set up Python
 
 The neovim configuration expects a virtualenv called `neovim` to be set up. This should be created through `pyenv` using
 the following commands:
@@ -46,8 +46,8 @@ virtualenv python then it is set up correctly.
 > if you're seeing an error about a virtualenv in the provider.python section it might be because you're not in a repository
 that has a virtualenv set up.
 
-### Neovim
+#### Neovim
 
 Neovim configuration, based on LazyVim
 
-Part of this README was auto-generated at 2024-10-28 15:55
+Part of this README was auto-generated at 2024-10-28 21:08
