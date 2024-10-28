@@ -46,7 +46,7 @@ def _reindent_readme(readme: Path) -> list[str]:
 
     for line in _read_lines(readme):
         if line.startswith("#"):
-            heading = "#" * (depth - 1)
+            heading = "#" * depth
             lines.append(f"{heading}{line}")
         else:
             lines.append(line)
