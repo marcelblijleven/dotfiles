@@ -1,5 +1,5 @@
 **/.DS_Store
 .config/**/.tmp*
 
-.config/tmux/plugins/**/*
+**/tmux/plugins/**/*
 

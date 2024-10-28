@@ -1,23 +1,51 @@
 # Dotfiles
 
-## Contents
+[GitHub Tag](https://img.shields.io/github/v/tag/marcelblijleven/dotfiles?style=plastic&label=version)
 
-This repository stores config files and setup scripts for a new installation on a Mac. The `.config` directory contains configuration files for the following tools:
+There are many like it, but this one is mine.
 
-* alacritty, a terminal
-* neovim, a highly extensible Vim editor
-* starship, a customisable prompt for any shell
+## What is it?
 
-The macos directory contains any MacOS specification configuration, mainly settings defaults like screenshot location and opening Finder in list view by default.
+This repository contains various configuration files, also known as _dotfiles_,
+that I use to set up both my work and personal laptop. This ensures they're
+configured the same.
 
-## Running on a new system
+## How does it work?
 
-Run the `setup.sh` command on a new system, this will create a symbolic link from the `.config` directory in this repository to the `"$HOME/.config"`. It will also install `homebrew` and various tools/apps via `brew bundle`, these are defined in the `Brewfile`.
+The setup relies on `stow` to create symbolic links from this repository to the
+home directory (`~`, `$HOME`, `XDG_CONFIG_HOME` etc.). This means that every
+file in this repository (excluding those ignored in `.stowrc`
+and`.stow-local-ignore`) are symlinked to the home directory,
+for example the`.config` directory in this repository is symlinked to `~/.config/`.
 
-A few manual steps are required after running the setup command:
+<!--- end of static README.md --->
 
-* Install the desired Python versions using `pyenv`, e.g. `pyenv install 3.12`.
-* `pipx install poetry`, this should be done after the setup script ensures the path for pipx
-* Install Jetbrains toolbox from the [Jetbrains website](https://www.jetbrains.com/toolbox-app/).
-* Install Go from the [Go website](https://go.dev/dl/).
+## .config
 
+This is where the majority of the configuration files life.
+This directory will be symlinked to `~/.config/`.
+
+### Set up Python
+
+The neovim configuration expects a virtualenv called `neovim` to be set up. This should be created through `pyenv` using
+the following commands:
+
+```bash
+pyenv virtualenv 3.12 neovim
+pyenv activate neovim
+pip install ./neovim-venv-requirements.txt
+```
+
+This installs pynvim, ruff, pytest and debugpy into the neovim virtualenv. Neovim should be configured to use this virtualenv
+already, this can be checked by opening neovim and running `:checkhealth python`. If the `python3_prog_host` is set to the
+virtualenv python then it is set up correctly.
+
+> [!NOTE]
+> if you're seeing an error about a virtualenv in the provider.python section it might be because you're not in a repository
+that has a virtualenv set up.
+
+### Neovim
+
+Neovim configuration, based on LazyVim
+
+Part of this README was auto-generated at 2024-10-28 15:55

@@ -1,4 +1,14 @@
-README.md
-.git
-.gitignore
+\.cz\.yaml
 
+\.DS_Store
+
+\.git
+\.gitignore
+\.github
+
+\.stow-local-ignore
+
+.*\.md
+
+setup
+scripts/.*\.py

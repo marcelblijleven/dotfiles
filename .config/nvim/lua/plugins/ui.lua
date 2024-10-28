@@ -3,7 +3,7 @@ return {
     "lukas-reineke/virt-column.nvim",
     opts = {
       char = { "┆" },
-      virtcolumn = "128",
+      virtcolumn = "80",
       highlight = { "NonText" },
     },
   },
