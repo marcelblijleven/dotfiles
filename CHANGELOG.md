@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.1 (2024-10-28)
+
+### Fix
+
+- set git user
+- fix image and add configuration secrion
+
 ## 1.9.0 (2024-10-27)
 
 ### Fix
