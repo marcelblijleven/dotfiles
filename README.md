@@ -1,6 +1,6 @@
 # Dotfiles
 
-[GitHub Tag](https://img.shields.io/github/v/tag/marcelblijleven/dotfiles?style=plastic&label=version)
+![GitHub Tag](https://img.shields.io/github/v/tag/marcelblijleven/dotfiles?style=plastic&label=version)
 
 There are many like it, but this one is mine.
 
@@ -17,6 +17,8 @@ home directory (`~`, `$HOME`, `XDG_CONFIG_HOME` etc.). This means that every
 file in this repository (excluding those ignored in `.stowrc`
 and`.stow-local-ignore`) are symlinked to the home directory,
 for example the`.config` directory in this repository is symlinked to `~/.config/`.
+
+## Configuration
 
 <!--- end of static README.md --->
 
