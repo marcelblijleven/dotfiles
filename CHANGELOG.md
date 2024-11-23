@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.0 (2024-11-23)
+
+### Feat
+
+- add catppuccin theme for kitty
+
 ## 1.9.1 (2024-10-28)
 
 ### Fix
