@@ -27,7 +27,7 @@ return {
       local header = "\n" .. surprised_pikachu .. "\n" .. logo .. "\n"
       opts.config.header = vim.split(header, "\n")
 
-      vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#ffff00" })
+      vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#e5c890" })
     end,
   },
 }
