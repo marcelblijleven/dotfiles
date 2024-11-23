@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.11.0 (2024-11-23)
+
+### Feat
+
+- add aerospace
+- make windows dragable from anywhere in the window
+
 ## 1.10.0 (2024-11-23)
 
 ### Feat
