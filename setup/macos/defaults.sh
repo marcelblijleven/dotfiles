@@ -40,5 +40,9 @@ chflags nohidden ~/Library
 # Make : in clock blink
 defaults write com.apple.menuextra.clock "FlashDateSeparators" -bool "true"
 
+# Make windows dragable from anywhere in the window using ctrl+cmd
+# Note: need to restart apps too
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
 # Reset ui
 killall SystemUIServer
