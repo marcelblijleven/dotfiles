@@ -14,6 +14,7 @@ brew 'jq'
 brew 'tmux'
 brew 'starship'
 brew 'borders'
+brew 'fzf'
 
 cask 'kitty'
 cask 'nikitabobko/tap/aerospace'
