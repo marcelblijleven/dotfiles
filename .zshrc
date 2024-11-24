@@ -30,6 +30,9 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+# fzf setup
+source <(fzf --zsh)
+
 # Aliasses
 
 alias vim="nvim"
