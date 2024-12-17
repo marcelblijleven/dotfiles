@@ -1,7 +1,7 @@
 cask_args appdir: '/Applications/'
 
 tap 'homebrew/bundle'
-tap FelixKratz/formulae
+tap 'FelixKratz/formulae'
 
 brew 'neovim'
 brew 'ripgrep'
