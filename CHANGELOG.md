@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.13.0 (2024-12-29)
+
+### Feat
+
+- **ghostty**: add ghostty config and shaders
+
 ## 1.12.0 (2024-11-24)
 
 ### Feat
