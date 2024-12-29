@@ -1,0 +1,12 @@
+theme = catppuccin-frappe
+font-family = JetBrainsMono Nerd Font Mono
+
+mouse-hide-while-typing = true
+background-blur-radius = 20
+
+macos-option-as-alt = true
+
+# custom-shader = /Users/marcelblijleven/.config/ghostty/shaders/crt.glsl
+# custom-shader = /Users/marcelblijleven/.config/ghostty/shaders/bloom.glsl
+# custom-shader = /Users/marcelblijleven/.config/ghostty/shaders/animated-gradient-shader.glsl
+
