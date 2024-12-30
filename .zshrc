@@ -40,7 +40,7 @@ alias ll="ls -nHal"
 alias secondbrain="cd '/Users/marcelblijleven/Library/Mobile Documents/iCloud~md~obsidian/Documents/SecondBrain'"
 
 # Faster keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+# defaults write NSGlobalDomain KeyRepeat -int 1
+# defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
