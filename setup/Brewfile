@@ -17,4 +17,5 @@ brew 'borders'
 brew 'fzf'
 
 cask 'kitty'
+cask 'ghostty'
 cask 'nikitabobko/tap/aerospace'
