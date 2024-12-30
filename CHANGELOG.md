@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.14.0 (2024-12-30)
+
+### Feat
+
+- add ghostty to brewfile
+
+### Fix
+
+- use correct formulae syntax
+
 ## 1.13.0 (2024-12-29)
 
 ### Feat
