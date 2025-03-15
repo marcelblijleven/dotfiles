@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.14.1 (2025-03-15)
+
+### Fix
+
+- **nvim**: detect tailwindcss if v4
+
 ## 1.14.0 (2024-12-30)
 
 ### Feat
